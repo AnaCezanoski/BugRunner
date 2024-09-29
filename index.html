@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/bug.gif" type="image/gif">
+    <title>BugRunner</title>
+</head>
+<body>
+    <audio id="music" src="images/music.mp3" autoplay></audio>
+    <audio id="jumpSound" src="images/jumpSound.mp3" autoplay></audio>
+    <audio id="gameOverSound" src="images/gameOverSound.mp3" autoplay></audio>
+
+    <div class="game-container">
+        <canvas id="canvas" width="1000" height="550"></canvas>
+        <img id="boy" class="animated-gif" src="images/boy.gif" alt="Boy">
+        <img id="gameOver" class="animated-gif" src="images/gameover.png" alt="Game Over" style="display: none;">
+        <img src="images/clouds.webp" class="clouds1">
+        <img src="images/clouds.webp" class="clouds2">
+        <div id="score-container">
+            <img id="score-img" src="images/score.webp" alt="Score">
+            <span id="score-text"></span>
+        </div>
+        <div id="restart-message" style="display: none;">Pressione ENTER para recomeçar</div>
+    </div>
+    <script type="module" src="./modules/game/jumpingBoy.mjs"></script>
+    <script type="module" src="modules\menu\menu.mjs"></script>
+</body>
+</html>
